@@ -19,7 +19,8 @@ handleChange = e => {
     return (
       <div>
         <strong>Your message:</strong>
-        <input type="text" name="message" id="message" />
+        <input type="text" name="message" id="message" onChange= {e => this.handleChange(e)}value={this.state.value}/>
+        <p>{this.state.counter - this.state.value.length}</p>/>
       </div>
     );
   }
