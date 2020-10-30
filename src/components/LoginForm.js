@@ -32,7 +32,7 @@ class LoginForm extends React.Component {
         <div>
           <label>
             Username
-            <input id="username" name="username" type="text" />
+            <input onChange={e => this.handleTextChange(e)} value = {this.state.text} id="username" name="username" type="text" />
           </label>
         </div>
         <div>
